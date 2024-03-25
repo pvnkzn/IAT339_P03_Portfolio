@@ -220,3 +220,11 @@ p {
   margin-right: 3rem;
   margin-top: 5rem;
 }
+
+.project-main-content h2{
+  margin-bottom: 3rem;
+}
+
+.project-main-content p{
+  margin-bottom: 5rem;
+}
