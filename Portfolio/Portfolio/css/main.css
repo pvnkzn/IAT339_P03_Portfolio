@@ -5,6 +5,7 @@
 body {
   font-family: sans-serif;
   padding: 2rem;
+  background-color: #fffcf0;
 }
 
 section:not([id]) {
@@ -26,25 +27,59 @@ section code {
   padding: 0.5em 0.75em;
 }
 
+h1 {
+  font-family: 'Satoshi', 'Helvetica', sans-serif;
+  color: #887391;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: 'Satoshi', 'Helvetica', sans-serif;
+  color: #171717;
+  font-size: 1.5rem;
+}
+
+
+p {
+  margin-top: 0;
+  font-family: 'Satoshi', 'Inter', sans-serif;
+  color: #171717;
+  font-size: 1rem;
+  max-width: 50%;
+}
+
+.in-text-link {
+  transition: color 0.3s ease;
+  color: #171717;
+
+}
+
+/* referred to nav hover above */
+.in-text-link:hover, .in-text-link:focus {
+  color: #887391;
+}
+
+
+
 
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
 
 /* Styling for the navigation button */
-.button-nav {
+.button {
+  transition: color 0.3s ease;
+  color: #171717;
+  font-family: 'Satoshi', 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 10px;
   display: inline-block;
-  padding: 0.5em 0.75em;
-  color: #FFF;
-  background-color: #333;
-  border-radius: 0.25em;
   text-decoration: none;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
 }
 
-.button-nav:hover, .button-nav:focus {
-  background-color: #999;
+.button:hover, .button:focus {
+  color: #887391;
 }
 
 
@@ -59,3 +94,43 @@ section code {
 /* 
   COMBINED ELEMENTS -------------------
 */
+
+/* menu */
+
+.menu {
+  transition: color 0.3s ease;
+  color: #171717;
+  font-family: 'Satoshi', 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.menu {
+  text-align: center;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-right: 4rem;
+}
+.menu ul li:last-child {
+  margin-right: 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #171717;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-family: 'Satoshi', 'Inter', sans-serif;
+}
+
+.menu a:hover, .menu a:focus {
+  color: #887391;
+}
