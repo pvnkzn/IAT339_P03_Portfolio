@@ -134,3 +134,51 @@ p {
 .menu a:hover, .menu a:focus {
   color: #887391;
 }
+
+/* side menu */
+.side-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-menu ul li {
+  margin-bottom: 0.5rem;
+}
+.side-menu ul li:last-child {
+  margin-right: 0;
+}
+
+.side-menu ul li a {
+  text-decoration: none;
+  color: #171717;
+  font-size: 1rem;
+  /* font-weight: 500; */
+  transition: color 0.3s ease;
+  font-family: 'Satoshi', 'Inter', sans-serif;
+}
+
+.side-menu a:hover, .side-menu a:focus {
+  color: #887391;
+}
+
+/* project listing */
+
+.project-listing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.project-content {
+  align-self: flex-end;
+}
+
+.project-listing p{
+  width: 100%;
+}
+
+.project-img img {
+  max-width: 70%; 
+  height: auto; 
+}
