@@ -103,13 +103,12 @@ p {
   font-family: 'Satoshi', 'Inter', sans-serif;
   font-weight: 500;
   font-size: 1rem;
-}
-
-.menu {
   text-align: center;
 }
 
+
 .menu ul {
+  margin-top: 0.5rem;
   list-style-type: none;
   padding: 0;
 }
@@ -167,6 +166,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* margin-left: 5rem; */
 
 }
 
@@ -182,3 +182,23 @@ p {
   max-width: 70%; 
   height: auto; 
 }
+
+.main-content {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.bio {
+  margin-top: 2rem;
+  /* margin-left: 3rem;
+  margin-right: 3rem; */
+  margin-bottom: 10rem;
+  /* border-top: 1px solid #887391; */
+  padding-top: 3rem;
+}
+
+.projects {
+  padding-top: 3rem;
+  border-top: 1px solid #887391;
+}
+
