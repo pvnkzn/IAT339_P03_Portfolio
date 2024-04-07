@@ -6,7 +6,7 @@ body {
   font-family: sans-serif;
   padding: 2rem;
   background-color: #fffcf0;
-}
+} 
 
 section:not([id]) {
   margin: 1em 0;
@@ -181,6 +181,9 @@ p {
   justify-content: space-between;
   /* margin-left: 5rem; */
   align-items: flex-end;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #887391;
 
 }
 
@@ -189,12 +192,22 @@ p {
 }
 
 .project-listing p{
-  width: 100%;
+  /* width: 100%; */
+  width: 40vw;
 }
 
 .project-img img {
-  max-width: 70%; 
+  max-width: 100%; 
+  width: 50vw; 
   height: auto; 
+  transition: 0.3s ease;
+  /* margin-right: 3rem; */
+}
+
+/* scale and darken img on hover */
+.project-img img:hover {
+  transform: scale(1.05); 
+  filter: brightness(80%);
 }
 
 .main-content {
@@ -274,5 +287,32 @@ p {
 
 .contact-main p{
   width: 20vw;
+}
+
+/* selection colour: https://www.w3schools.com/howto/howto_css_text_selection.asp*/
+::-moz-selection {
+  color: #FFFCF0;
+  background: #887391;
+}
+
+::selection {
+  color: #FFFCF0;
+  background: #887391;
+}
+
+
+/* change scrollbar colours https://css-tricks.com/almanac/properties/s/scrollbar/ */
+::-webkit-scrollbar {
+  width: 12px; 
+  background-color: #ECCBEA;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #887391; 
+  border-radius: 6px; 
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ECCBEA; 
 }
 
