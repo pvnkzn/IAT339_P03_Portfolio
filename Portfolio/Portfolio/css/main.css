@@ -84,6 +84,7 @@ p {
 
 
 
+
 /* 
   TEXT ELEMENTS -------------------
 */
@@ -134,7 +135,6 @@ p {
   color: #887391;
 }
 
-
 /* vertical nav bar: https://www.w3schools.com/css/css_navbar_vertical.asp */
 
 .side-menu {
@@ -177,9 +177,10 @@ p {
 
 .project-listing {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   /* margin-left: 5rem; */
+  align-items: flex-end;
 
 }
 
@@ -222,9 +223,56 @@ p {
 }
 
 .project-main-content h2{
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
 }
 
-.project-main-content p{
-  margin-bottom: 5rem;
+
+.project-img {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+
 }
+
+.project-info-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.info-item {
+  flex: 2;
+}
+
+.bold-paragraph p {
+  font-weight: 500;
+}
+
+.about-skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10rem;
+  margin-top: 5rem;
+}
+
+.info-item-about p {
+  width: 15vw;
+}
+
+.contact-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10rem;
+  margin-top: 5rem;
+}
+
+.contact-main p{
+  width: 20vw;
+}
+
