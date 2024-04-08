@@ -212,11 +212,6 @@ p {
   /* margin-right: 3rem; */
 }
 
-/* scale and darken img on hover */
-/* .project-img img:hover {
-  transform: scale(1.05); 
-  filter: brightness(80%);
-} */
 
 .project-listing-img img {
   max-width: 100%; 
@@ -337,5 +332,109 @@ p {
 
 ::-webkit-scrollbar-track {
   background-color: #ECCBEA; 
+}
+
+
+ 
+/* responsive for mobile and tablet view using media queries */
+
+@media screen and (max-width: 768px) {
+
+  body {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .menu ul li {
+    margin-right: 1rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+    /* flex-direction: column; */
+  }
+
+  p {
+    max-width: 100%;
+  }
+
+  .project-listing {
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #887391;
+  }
+
+  .project-content {
+    margin-right: 0; 
+    margin-bottom: 1rem; 
+    align-self: center;
+  }
+
+  .project-listing p{
+    width: 40vw;
+  }
+
+  .project-listing-img img {
+    width: 100vw; 
+  }
+
+  .contact-main {
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 2rem;
+  }
+
+  .side-menu {
+    display: none;
+  }
+
+  .project-main-content {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 5rem;
+  }
+  
+  .project-main-content h2{
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+  }
+
+  .project-img {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  
+  }
+
+  .project-img img {
+    width: 100vw; 
+  }
+
+  .about-skills {
+    gap: 5rem;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  .menu ul li {
+    margin-right: 1rem;
+    display: block;
+  }
+  .main-content {
+    margin-top: 1rem;
+  }
+
+  .bio {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    padding-top: 0rem;
+  }
+
 }
 
