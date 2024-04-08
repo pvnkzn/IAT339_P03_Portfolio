@@ -118,9 +118,17 @@ p {
   display: inline-block;
   margin-right: 4rem;
 }
+
 .menu ul li:last-child {
   margin-right: 0;
 }
+
+.menu ul li.logo-item {
+  float: left;
+  margin-left: 3rem;
+  margin-right: -6rem;
+}
+
 
 .menu ul li a {
   text-decoration: none;
@@ -227,6 +235,7 @@ p {
 .main-content {
   margin-left: 3rem;
   margin-right: 3rem;
+  margin-top: 5rem;
 }
 
 .bio {
