@@ -60,12 +60,6 @@ p {
 }
 
 
-
-
-/* 
-  INTERACTIVE ELEMENTS -------------------
-*/
-
 /* Styling for the navigation button */
 .button {
   transition: color 0.3s ease;
@@ -82,19 +76,6 @@ p {
   color: #887391;
 }
 
-
-
-
-/* 
-  TEXT ELEMENTS -------------------
-*/
-
-
-
-
-/* 
-  COMBINED ELEMENTS -------------------
-*/
 
 /* menu */
 
@@ -192,8 +173,15 @@ p {
   margin-bottom: 3rem;
   padding-bottom: 3rem;
   border-bottom: 1px solid #887391;
+}
+
+.project-listing:last-child {
+  border-bottom: none;
+  padding-bottom: 0rem;
+  margin-bottom: 0rem;
 
 }
+
 
 .project-content {
   align-self: flex-end;
@@ -334,7 +322,40 @@ p {
   background-color: #ECCBEA; 
 }
 
+footer {
+  margin-top: 5rem;
+  font-weight: 500;
+  border-top: 1px solid #887391;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
 
+footer ul {
+  margin-top: 0.5rem;
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: flex;
+  flex-direction: row;
+  /* margin-left: 3rem; */
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #171717;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-family: 'Satoshi', 'Inter', sans-serif;
+}
+
+footer a:hover, .menu a:focus {
+  color: #887391;
+}
  
 /* responsive for mobile and tablet view using media queries */
 
@@ -416,6 +437,10 @@ p {
 
   .about-skills {
     gap: 5rem;
+  }
+
+  footer {
+    margin-top: 1rem;
   }
 
 }
