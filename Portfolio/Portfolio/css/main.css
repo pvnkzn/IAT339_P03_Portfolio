@@ -274,13 +274,14 @@ p {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 10rem;
+  /* gap: 10rem; */
   margin-top: 5rem;
 }
 
 .info-item-about p {
-  width: 15vw;
+  width: 30vw;
 }
+
 
 .contact-main {
   display: flex;
